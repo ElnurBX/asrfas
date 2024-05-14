@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.home{
+    form{
+        flex-direction: column;
+        position: absolute;
+        bottom: 10px;
+    }
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .ilkmesaj{
+        position: relative;
+        img{
+            position: relative;
+            z-index: 2;
+            width: 200px;
+            height: 100%;
+        }
+        .mesaj{
+            z-index: 0;
+            position: absolute;
+            top: -130px;
+            left: -50px;
+            padding: 5px 10px 45px 10px; 
+            width: 150px;
+            height: 180px;
+            background: #fff;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+            border-radius: 5px;
+            p{
+                margin: 5px 0 0;
+                font-size: 14px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .cavab{
+                display: flex;
+                justify-content: space-around;
+
+            }
+        }
+    }
+}
